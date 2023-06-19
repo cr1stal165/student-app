@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="table-container">
+  
+      <h2 class="title-students">Список студентов</h2>
+  
+      <nz-table [nzData]="paginatedStudents" [nzShowPagination]="false" [nzBordered]="true">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of paginatedStudents">
+            <td>{{ student.id }}</td>
+            <td>
+              <a [routerLink]="['/about', student.id]">{{ student.name }}</a>
+            </td>
+            <td>{{ student.age }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+  
+      <nz-pagination
+        [(nzPageIndex)]="currentPage"
+        [nzTotal]="students.length"
+        [nzPageSize]="pageSize"
+        (nzPageIndexChange)="onPageChange($event)"
+      ></nz-pagination>
+  
+    </div>
+    
+  </div>
+  

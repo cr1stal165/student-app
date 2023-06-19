@@ -1,0 +1,15 @@
+.title-students{
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .table-container {
+    width: 80%;
+  }
+  
