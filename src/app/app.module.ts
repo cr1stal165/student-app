@@ -17,6 +17,7 @@ import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 import { StudentListComponent } from './components/student-list/student-list.component';
 import { StudentDetailsComponent } from './components/student-details/student-details.component';
 import { RouterModule } from '@angular/router';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 registerLocaleData(en);
 
@@ -34,6 +35,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     NzTableModule,
     NzPaginationModule,
+    NzButtonModule,
     RouterModule
   ],
   providers: [

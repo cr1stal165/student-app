@@ -1,0 +1,16 @@
+.container{
+    display:grid;
+    justify-content: center; 
+    margin-top: 150px;
+}
+
+[nz-button] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+    margin-top: 35px;
+  }
+
+nz-button-group [nz-button] {
+    margin-right: 0;
+
+}

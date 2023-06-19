@@ -10,6 +10,7 @@ import { StudentService } from 'src/app/services/students';
 })
 export class StudentDetailsComponent implements OnInit {
 
+
   students: any[];
   student: any;
 

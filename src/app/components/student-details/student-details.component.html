@@ -1,9 +1,19 @@
 <div class="container">
-    <h2>Детали студента</h2>
+    <h1>Информация о студенте</h1>
+    <br>
     <div>
-      <p><strong>Имя:</strong>{{ student.name }}</p>
-      <p><strong>Возраст:</strong>{{ student.age }}</p>
+      <p><strong>Имя: </strong>{{ student.name }}</p>
+      <p><strong>Возраст: </strong>{{ student.age }}</p>
+      <p><strong>Курс: </strong>{{ student.course}}</p>
+      <p><strong>Почта: </strong>{{ student.email}}</p>
+      <p><strong>Телефон: </strong>{{ student.phone}}</p>
     </div>
+    <button [routerLink]="['']" nz-button nzType="primary" nzShape="round">
+      <span nz-icon ></span>
+      Назад
+    </button>
   </div>
+
+  
 
   
